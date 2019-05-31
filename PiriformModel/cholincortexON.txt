@@ -1,0 +1,63 @@
+Path cholinmod/
+dt 0.5
+tsim 2000
+npyramidal 100
+nfeedback 100
+cchancemitpyr 0.2
+cchancemitffo 0.4
+cchancepyrpyr 0.4
+cchancepyrfba 0.2
+cchancefbapyr 0.4
+cchanceffopyr 0.3
+noiseffo true
+noisepyr true
+noisefba true
+NoiseParam false
+NoiseLevel 0.1
+flagAHP false
+savePyr false
+SpikeV 65e-3
+
+NEURONS
+
+Feedforward
+tau 5
+tauAMPA1 1
+tauAMPA2 2
+EAMPA 5e-3
+Vrest -65e-3
+Vhyper -75e-3
+FThresh -50e-3
+wAMPA 1.2
+
+Pyramidal
+tau 10
+tauAHP 20
+tauAMPA1 1
+tauAMPA2 2
+tauGABA1 4
+tauGABA2 8
+tauCA1 1
+tauCA2 10
+EAMPA 5e-3
+EGABA -70e-3
+EAHP -16
+Vrest -65e-3
+Vhyper -75e-3
+FThresh -45e-3
+wAMPA 0.3
+wGABA 0.2
+wAMPAPY 2.5
+wGABAFF 0.02
+
+Feedback
+tau 5
+tauAMPA1 1
+tauAMPA2 2
+EAMPA 5e-3
+wAMPA 0.4
+Vrest -65e-3
+Vhyper -75e-3
+FThresh -50e-3
+
+end

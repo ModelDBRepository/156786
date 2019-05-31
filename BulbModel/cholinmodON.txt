@@ -1,0 +1,115 @@
+Path cholinmod/
+dt 0.5
+tsim 7000
+tinit 1
+tfinal 7000
+ConnType circular
+nmitral 50
+ngranule 50
+ConnChanceMitGra 0.4
+ConnChanceGraGra 0.1
+SpikingInput false
+SpikingPglo false
+GraGracon false
+NoiseOSN true
+NoisePgl true
+NoiseMit true
+NoiseGra true
+PreSet true
+SaveMitral true
+MitFileName AChOn
+OSNsource glomerulecircle10.mat
+Odorant 1
+loadOSNdata false
+toroid true
+weights false
+AHP false
+Respiration true
+RespFreq 2
+LoadConn true
+Iext 15e-3
+SpikeV 65e-3
+
+NEURONS
+
+OSN
+tau 5
+R 1
+Vrest 0e-3
+Vhyper -10e-3
+FThresh 15e-3
+noise 0
+
+Periglomerular
+tau 2
+tauAMPA1 1
+tauAMPA2 2
+EAMPA 70e-3
+R 1
+gmaxAMPA 166e-3
+IACh 0e-3
+Vrest 0e-3
+Vhyper -10e-3
+FThresh 4e-3
+noise 0
+
+Glomerulus
+tau 5
+tauAMPA1 1
+tauAMPA2 2
+tauGABA1 4
+tauGABA2 8
+EAMPA 70e-3
+EGABA -15e-3
+R 1
+gmaxAMPA 270e-3
+gmaxGABA 380e-3
+IACh 0e-3
+Vrest 0e-3
+FThresh 5e-3
+noise 0
+
+Mitral
+tau 20
+tauAMPA1 1
+tauAMPA2 2
+tauGABA1 4
+tauGABA2 8
+tauAHP1 4
+tauAHP2 8
+EAMPA 70e-3
+EGABA -15e-3
+EAHP -5e-3
+R 2
+gmaxAMPA 3e-3
+gmaxGABA 60e-3
+gmaxAHP 5
+Vrest 0e-3
+Vhyper -10e-3
+FThresh 5e-3
+Noise 0
+CellRadius 24
+
+
+Granule
+tau 15
+tauAMPA1 1
+tauAMPA2 2
+tauGABA1 4
+tauGABA2 8
+tauAHP1 4
+tauAHP2 8
+EAMPA 70e-3
+EGABA -15e-3
+EAHP -15e-3
+R 1
+gmaxAMPA 40e-3
+gmaxGABA 0e-3
+gmaxAHP 10
+Vrest 0e-3
+Vhyper -10e-3
+FThresh 8e-3
+Noise 0
+CellRadius 1
+
+end
